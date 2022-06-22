@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flexboxes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="movies.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<span style="margin: 20px; margin-top: 20px;">
+<a href="/storage/emulated/0/byemba/index.html" >&lt; Back To Home</a></span>
+<nav class="navbar">
+<div class="container">
+    <div class="logo">Movies & TV<i class="fa-solid fa-clapperboard-play"></i></div>
+ <ul class="nav">
+    <li>
+  <a href="#" >Home</a>
+     </li>
+     <li>
+  <a href="#" >About</a>
+     </li>
+     <li>
+     <a href="#" >Sign Up</a>
+     </li>
+  </ul>
+       </div>
+  </nav>
+  <section class="search-button">
+  <div class="container">
+  <div>
+  <label><strong>Search for Movies and More</strong>
+ </label><br> <br>
+  <input type="search" placeholder="Enter Key Word" class="this-search">
+  <br><br>
+  
+  <p><strong>Select Category : </strong></p>
+  <br>
+     <div class="selection">
+     <select>
+     <option>All</option>
+     <option>Animation</option>
+     <option>Romance</option>
+     <option>Movie</option>
+     <option>Hollywood</option>
+     <option>Bollywood</option>
+     </select>
+  </div>
+  <br>
+  <div class="msg"></div>
+  <div>
+  <input type="button" value="Search" class="search">
+  </div>
+  <br>
+  <div>
+  <p><strong>Latest Searches :</strong></p>
+  </div>
+  </div>
+  </section>
+  <section class="photos">
+  <div class="container">
+  <div class="image">
+  <h2>Doctor Strange 2</h2>
+ <p>
+ <img src="ds.png">
+ <input type="button" value="Download">
+ </p>
+ </div>
+  <div class="image">
+  <h2>Pirates of the Caribean</h2>
+<p>
+<img src="cb.jpg">
+</p>
+<input type="button" value="Download"><!--</button>-->
+</div>
+  <div class="image">
+  <h2>Rick & Morty S1</h2>
+<p>
+ <img src="R&M.jpg">
+</p>
+<input type="button" value="Download">
+  </div>
+  <div class="image">
+  <h2>Rick & Morty S2</h2>
+  <p>
+  <img src="R&P.jpg">
+  </p>
+  <input type="button" value="Download">
+  </div>
+  <div class="image" style="background-color: lightgrey;">
+  </div>
+  <div class="image" style="background-color: lightgrey;">
+  </div>  
+  </div>
+  </section>
+  <section class="container">
+  <p><strong>Page : </strong><a href="#" >1</a> of <a href="#" >500</a>
+  </p>
+  <p><a href="#" >Next Page&gt;</a>
+  <br><br>
+  <div class="search-btn">
+  <label>Search For More
+  <input type="search" class="otherSearch" style="background-color: red; border-color: black; color: black;"><br>
+  </label>
+  <br>
+  <label>
+  <input type="submit" value="Search">
+  </label>
+  </div>
+  </section>
+  <footer class="container">
+  <div class="this-footer">
+  <div class="down">
+ <a href="#">Upload Movie</a>
+ </div><br>
+ <div>
+<h3> Follow Us</h3>
+  </div>
+  <ul>
+  <li>
+  <a href="#" ><i class="fa fa-facebook" style="font-size: 35px;"></i></a>
+  </li>
+  <li>
+  <a href="#" ><i class="fa fa-instagram" style="font-size: 35px;"></i></a>
+  </li>
+  <li>
+  <a href="#" ><i class="fa fa-twitter" style="font-size: 35px;"></i></a>
+  </li>
+  </ul>
+  </div>
+  <div><br>
+  <hr>
+ <center><p style="margin-top: 10px;"> Copyright&copy; 2022</p></center>
+  </div>
+  </footer>
+  <script>
+       const keyInput = document.querySelector(".this-search");
+       const btn = document.querySelector(".search");
+       const msg = document.querySelector(".msg");
+       //make a click event
+       btn.addEventListener("click", onClick);
+       function onClick(e){
+       e.preventDefault();
+       //add the error class
+      if(keyInput.value === ""/* || keyInput.value !== ""*/)  {
+      msg.classList.add("error");
+       msg.innerHTML = "Sorry the Action You Are trying to Do does not work";
+       setTimeout(() => msg.remove(), 5000);
+       } else {msg.innerHTML = "Sorry the Action You Are trying to Do does not work";
+       //console.log("not working");
+       }
+     }
+  </script>
+</body>
+</html>
