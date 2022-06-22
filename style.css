@@ -33,7 +33,6 @@ color: red;
 background: none;
 }
 .navbar {
-width: 100%;
 background: black;
 color: white;
 position: sticky;
@@ -69,7 +68,6 @@ padding-top: 5px;
 font-size: 30px;
 }
 #home .container {
-width: 100%;
 color: black;
 background: white;
 text-align: center;
@@ -78,7 +76,6 @@ text-align: center;
 color: black;
 }
 #skills .container{
-width: 100%;
 background: black;
 color: white;
 }
@@ -112,8 +109,7 @@ line-height: 1.4rem;
 /*margin-top: 20px;
 margin-right: 20px;*/
 }
-#projects .container{
-width: 100%;
+#projects .container {
 background: lightgrey;
 }
 #projects .container .projectNames {
@@ -148,7 +144,6 @@ color: white;
 color: yellow;
 }
 #contact .container {
-width: 100%;
 background: black;
 color: white;
 }
