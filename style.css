@@ -6,7 +6,7 @@ font-family: sans-serif, Ariel;
 font-size: 19px;
 }
 .container {
-max-width: 1100px;
+width: 100%;
 margin: 0 auto;
 padding: 30px;
 }
@@ -33,6 +33,7 @@ color: red;
 background: none;
 }
 .navbar {
+width: 100%;
 background: black;
 color: white;
 position: sticky;
@@ -68,6 +69,7 @@ padding-top: 5px;
 font-size: 30px;
 }
 #home .container {
+width: 100%;
 color: black;
 background: white;
 text-align: center;
@@ -76,6 +78,7 @@ text-align: center;
 color: black;
 }
 #skills .container{
+width: 100%;
 background: black;
 color: white;
 }
@@ -110,6 +113,7 @@ line-height: 1.4rem;
 margin-right: 20px;*/
 }
 #projects .container{
+width: 100%;
 background: lightgrey;
 }
 #projects .container .projectNames {
@@ -144,6 +148,7 @@ color: white;
 color: yellow;
 }
 #contact .container {
+width: 100%;
 background: black;
 color: white;
 }
@@ -190,10 +195,6 @@ sub {
 color: black;
 }
 @media (min-width:540px) {
-    body {
-    background: blue;
-    font-family: monospace;
-    }
     .navbar .container {
     display: flex;
     
