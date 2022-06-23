@@ -197,6 +197,12 @@ background: black;
 display: block;
 margin-left: 5px;
 }
+#skills .container .img .image {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
 #projects .container img {
 width: 200px;
 height: 250px;
