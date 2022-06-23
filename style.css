@@ -193,6 +193,10 @@ color: black;
 display: block;
 background: grey;
 }
+.navbar ul {
+display: block;
+margin-left: 5px;
+}
 }
 @media (min-width:540px) {
     .navbar .container {
