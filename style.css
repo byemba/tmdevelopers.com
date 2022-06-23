@@ -188,7 +188,7 @@ font-weight: bold;
 sub {
 color: black;
 }
-@media (max-width: 534px) {
+@media (max-width: 360px) {
 .navbar .container {
 display: block;
 background: grey;
