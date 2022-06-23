@@ -197,6 +197,10 @@ background: black;
 display: block;
 margin-left: 5px;
 }
+#projects .container img {
+width: 200px;
+height: 250px;
+}
 }
 @media (min-width:540px) {
     .navbar .container {
