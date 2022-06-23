@@ -148,7 +148,6 @@ background: black;
 color: white;
 }
 #contact .container .contactMe {
-//\margin-top: 10px;
 margin-left: -11px;
 display: flex;
 justify-content: flex-start;
@@ -188,6 +187,11 @@ font-weight: bold;
 }
 sub {
 color: black;
+}
+@media (max-width: 428) {
+.navbar .container {
+display: block;
+}
 }
 @media (min-width:540px) {
     .navbar .container {
