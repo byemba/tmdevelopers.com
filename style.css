@@ -196,7 +196,7 @@ display: block;
 @media (min-width:540px) {
     .navbar .container {
     display: flex;
-    
+    background: grey;
     }
     #projects .container .projectNames {
     display: flex;
