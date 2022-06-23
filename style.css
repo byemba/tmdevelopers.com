@@ -85,7 +85,7 @@ justify-content: flex-start;
 align-items: center;
 margin-top: 25px;
 margin-left: -25px;
-
+flex-wrap: wrap;
 }
 
 #skills .container .img .image {
@@ -193,9 +193,18 @@ color: black;
 display: block;
 background: black;
 }
-.navbar ul {
-display: block;
-margin-left: 5px;
+   .navbar .container ul {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: space-around;
+   align-items: center;
+   }
+   .navbar .container ul li {
+   margin-top: 10px;
+   margin-left: -10px;
+   /*.grid-container {
+   display: block;
+   }*/
 }
 #skills .container .img .image {
 display: flex;
