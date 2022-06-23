@@ -32,6 +32,7 @@ background: grey;
 margin: 100px auto;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
+border-radius: 5px;
     /*  @media (max-width:500px) {
           display: flex;
           flex-direction: row;
@@ -77,6 +78,14 @@ background: rgb(123, 143, 123);
 grid-row: 2 / 4;
 background: rgb(0, 0, 0);
 color: white;
+}
+@media (max-width: 360px) {
+   body {
+   font-family: sans-serif;
+   }
+   .grid-container {
+   display: block;
+   }
 }
 /**.card:nth-of-type(2) {
 grid-row: 2 / 4;
