@@ -81,7 +81,7 @@ color: white;
 }
 #skills .container .img {
 height: 300px;
-width: 200px;
+width: 50px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
