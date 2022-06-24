@@ -80,6 +80,8 @@ background: black;
 color: white;
 }
 #skills .container .img {
+height: 300px;
+width: 200px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
