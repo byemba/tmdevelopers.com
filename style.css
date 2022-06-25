@@ -207,7 +207,15 @@ background: black;
    display: block;
    }*/
 }
-
+#skills .container .img {
+   width: 340px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 25px;
+   margin-left: 15px;
+   flex-direction: column;
+   }
 #projects .container img {
 width: 200px;
 height: 250px;
