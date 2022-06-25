@@ -80,14 +80,13 @@ background: black;
 color: white;
 }
 #skills .container .img {
-height: 300px;
-width: 50px;
 display: flex;
-flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 margin-top: 25px;
-margin-left: 80px;
+margin-left: -15px;
+flex-direction: row;
+//flex-wrap: wrap;
 }
 
 #skills .container .img .image {
@@ -99,9 +98,8 @@ border: 2px solid black;
 border-radius: 5px 5px;
 margin-left: 10px;
 display: flex;
-/*grid-template-columns: repeat(2, 1fr);*/
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 }
 #skills .container .img .image p{
@@ -209,12 +207,7 @@ background: black;
    display: block;
    }*/
 }
-#skills .container .img .image {
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-wrap: wrap;
-}
+
 #projects .container img {
 width: 200px;
 height: 250px;
