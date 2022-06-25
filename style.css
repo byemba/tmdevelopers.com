@@ -207,12 +207,12 @@ background: black;
    }*/
 }
 #skills .container .img {
-   width: 340px;
+   width: 270px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 25px;
-   margin-left: 5px;
+   margin-left: -15px;
    flex-direction: column;
    }
 #projects .container img {
