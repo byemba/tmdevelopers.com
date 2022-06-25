@@ -98,8 +98,8 @@ background: #333;
 border: 2px solid black;
 border-radius: 5px 5px;
 margin-left: 10px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+display: flex;
+/*grid-template-columns: repeat(2, 1fr);*/
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
