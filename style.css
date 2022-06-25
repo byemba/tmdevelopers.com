@@ -86,7 +86,6 @@ align-items: center;
 margin-top: 25px;
 margin-left: -15px;
 flex-direction: row;
-//flex-wrap: wrap;
 }
 
 #skills .container .img .image {
