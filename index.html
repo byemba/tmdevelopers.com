@@ -1,105 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html Lang="en">
 <head>
-<title>sidebar</title>
+<title>ByemBa</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Cleaning, Sheid Cleaning Services, Cleaner">
-<meta name="description" content="Here We Clean every type of indoor, weather house, office, industry etc, we can clean. Hire us for any cleanings">
-<link rel="stylesheet" href="CSS/style.css">
+<meta name="keywords" content="Byemba,  Freelancer,  Programming with Byemba">
+<link rel="stylesheet" href="bootstrap@5.0.0-alpha2.min.css">
+<link rel="stylesheet" href="bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<div class="logo">
-
-     <img src="images/logo.jpg">
-     <h2>Sheid Cleaning Services</h2>
-</div>
-</header>
-<!-- Use any element to open the sidenav -->
-<div class="intro">
-<p>
-<b>Welcome To Sheid Cleaning Services, where we clean your 
-Hotels, Houses, Lodges, Offices, Malls etc</b>.
-<p>
-  <ul class="schedual">
-    <li>One Time</li>
-    <li>Daily</li>
-    <li>Monthly</li>
+ <nav class="navbar navbar-expand-md bg-primary sticky-top navbar-light ">
+    <div class="container">
+      <a href="#" class="navbar-brand">Byemba Codes <i class="bi bi-laptop"></i></a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#the-hidden-nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="the-hidden-nav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#projects">Projects</a></a>
+     </li> 
+     <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+           <a href="#skills" class="nav-link">Articles</a>
+         </li>
+         <li class="nav-item">
+           <a href="#skills" class="nav-link">Contact</a>
+         </li>
   </ul>
-<button type="submit" class="btn"> <a href="mailto:sheidceo35@gmail.com">Book Us Now</a></button>
-</div>
-<div class="main">
-<div>
-   <h2>Previous Cleanings</h2>
-   <p>These are the previous cleanings we have Done</p>
-</div>
-<div class="already-done">
-<div class="serviceImages"><img src="images/clean1.jpg"><p>Then And After</p></div>
-<div class="serviceImages"><img src="images/clean2.jpg"><p>Then And After</p></div>
-<div class="serviceImages"><img src="images/clean3.jpg"><p>Then And After</p></div>
-<div class="serviceImages"><img src="images/clean4.jpg"><p>Then And After</p></div>
-<div>
-<a href="more-images.html" >See All...</a>
-</div>
-</div>
+  </div>
+  </di>
+</nav>
 
-</div>
-<div class="service">
-  <div class="service-header">
-    <h1>Our Services</h1>
+<section id="home" class="bg-dark">
+  <div class="container text-center">
+    <h3 class="pt-3 text-secondary">Welcome</h3>
+    <p class="lead py-2 text-warning">Hello I am Byemba...<br>
+    <span class="text-danger">A Web Developer</span></p>
+    <a href="aboutByemba.html" class="btn btn-warning mb-3">Read More</a>
+    
+    <!--<div class="collapse navnar-collapse" id="hide">
+      <div>hello</div>
+    </div>-->
   </div>
-<div class="service-images">
-  <div class="img">
-    <img src="Service Images/service5.jpg" alt="house cleaning" />
-    <p>Moving Services</p>
-  </div>
-  <div class="img">
-    <img src="Service Images/service2.jpg" alt="house cleaning" />
-    <p>Window Cleaning</p>
-  </div>
-  <div class="img">
-    <img src="Service Images/service8.jpeg" alt="house cleaning" />
-    <p>Vacuuming</p>
-  </div>
-  <div class="img">
-    <img src="Service Images/service7.jpeg" alt="house cleaning" />
-    <p>Restroom Sanitation</p>
-  </div>
-  <div class="img">
-    <img src="Service Images/service1.jpg" alt="house cleaning" />
-    <p>Dusting</p>
-  </div>
-  <div class="img">
-    <img src="Service Images/service9.jpeg" alt="house cleaning" />
-    <p>Carpet Cleaning</p>
-  </div>
-</div>
-</div>
-<footer class="contact">
-  <nav>
-    <ul>
-      <li>Email Us : sheidceo35@gmail.com</li>
-      <li>
-        Give us a Call : +2348109655860 & +2349035768993
-      </li>
-      <li>
-        <a href="about-sheid.html">About</a>
-      </li>
-      <!--<li><a href="privacy_policy.html">Privacy Policy</a></li>
-      <li><a href="terms&conditions.html">Terms and Conditions</a></li>-->
-      <li><a href="https://byemba.github.io/this-is-byemba/">Developer Info</a></li>
-    </ul>
-  </nav>
-  <hr>
-  <p class="copy">Copyright &copy; Sheid Cleaning Services 2022</p>
-</footer>
-<script type="text/javascript">
+</section>
 
-var headerContent = document.querySelector(".logo");
-headerContent.children[0].style.marginLeft = "-10px";
-headerContent.children[1].style.marginLeft = "19px";
-headerContent.children[1].style.marginTop = "5px";
-</script>
+<section id="projects" class="bg-secondary">
+  <div class="container">
+    <h1 class="text-center h1 py-3 text-light">My Projects</h1>
+    <p class="lead text-warning pb-2">Checkout my greatest projects since the day i started learning how to code, suit yourself and see if they match the Job.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card my-3">
+          <!-- Movie Site Landing Page -->
+          <div class="card-body text-center text-light bg-dark">
+            <h3 class="card-title">Movie Landing Page</h3>
+            <img src="movie.jpg" class="card-img py-3 w-md-60 w-50">
+            <p class="card-text lead">This is a dynamic Movie Landing Created with HTML, CSS and JavaScript</p>
+            <a href="movies.html" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <!-- Sheid Landing Page -->
+        <div class="card my-3">
+          <div class="card-body text-center text-light bg-dark">
+            <h3 class="card-title">Cleaning Service Landing Page</h3>
+            <img src="scs.png" class="card-img py-3 w-50">
+            <p class="card-text lead">This is a Landing Page I Created for a Business in Nigeria.</p>
+            <a href="sheid.html" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+       <!-- Project No 3 -->
+        <div class="card my-3">
+          <div class="card-body text-center text-light bg-dark">
+            <h3 class="card-title">Animation Landing Page</h3>
+            <img src="css.jpg" class="card-img py-3 w-50">
+            <p class="card-text lead">This is an Animated landing Page Created with HTML and CSS only</p>
+            <a href="#" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+     <!-- Project No 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card my-3">
+          <div class="card-body text-center text-light bg-dark">
+            <h3 class="card-title">Testimonial Landing Page</h3>
+            <img src="html.jpg" class="card-img py-3 w-50">
+            <p class="card-text lead">This is a Testimonial Landing Created with HTML and CSS only.</p>
+            <a href="#" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="bg-warning">
+    <div class="container">
+      <h1 class="h1 pt-3 text-center">My Skills</h1>
+      <p class="lead py-3">These are my Top Skills Currently, go through and see if they match the job.</p>
+      <div class="text-center pb-3">
+       <!-- <i class="bi bi-css"></i>-->
+        <img src="bootstrap-icons-1.9.1/filetype-html.svg" class=" text-secondary icons">
+        <img src="bootstrap-icons-1.9.1/filetype-css.svg" class=" text-secondary icons">
+        <img src="bootstrap-icons-1.9.1/filetype-js.svg" class=" text-secondary icons">
+        <img src="bootstrap-icons-1.9.1/bootstrap-fill.svg" class=" text-secondary icons">
+      </div>
+     </div>
+</section>
+
+<section id="contact" class="bg-dark text-warning">
+      <div class="container">
+        <h3 class="h1 pt-3 text-left">
+          Contact Me
+        </h3>
+        <p class="lead pb-3">Email : mulyatabyemba00@gmail.com</p>
+      
+      <div class="text-left">
+        <h3 class="h1 ">Follow me</h3>
+      <div class="d-flex justify-content-start align-items-center h1">
+        <a href="https://mobile.twitter.com/byemba7" class="bi bi-twitter text-warning" target="_blank"></a>
+      <!-- class="followIcon"><a href="https://www.facebook.com/jr.mulyata" target="_blank"><i class="fa fa-facebook" style="font-size: 30px" ></i><!--Facebook--</a></div>-->
+      <a href="https://youtube.com/channel/UCcenh60LKlYZwe0Ba70aqmw" target="_blank" class="bi bi-youtube mx-5 text-warning"></a>
+      <a href="https://www.github.com/byemba" target="_blank" class="bi bi-github text-warning"></a>
+      </div>
+      
+      <div class="p-3 text-center position-relative">
+      <hr>
+      <p class="lead">Copyright &copy; 2022 ByemBa</p>
+      <a href="#" class="primary h1">
+      <i class="bi bi-arrow-up-circle"></i>
+      </a>
+       </div>
+       </div>
+    </div>
+</section> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    </script>
 </body>
 </html>
