@@ -1,251 +1,219 @@
 *{
-box-sizing: border-box;
 margin: 0;
 padding: 0;
-font-family: sans-serif, Ariel;
-font-size: 19px;
+font-family:sans-serif;
+font-size: 25px;
 }
-.container {
-width: 100%;
-margin: 0 auto;
-padding: 30px;
-}
-img {
-height: 200px;
-width: 150px;
-border-radius:10px;
-margin: 3px;
-border: 2px black solid;
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 a {
-text-decoration: none;
+  text-decoration-line: none;
 }
-ul {
-list-style:none;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 2s;
 }
-.navbar a {
-color: white;
-text-decoration:none;
-font-weight: bold;
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-.navbar a:hover {
-color: red;
-background: none;
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 183px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-.navbar {
-background: black;
+header {
+background: #333;
 color: white;
 position: sticky;
 top: 0;
-height: 100%;
+/*height: 80px;*/
 }
-.navbar .container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-height: 100%;
+header .menu{
+border: none;
+border-radius: 5px;
+height: 30px;
+width: 80px;
+padding-left: 10px;
 }
-.navbar ul {
-display: flex;
+header img {
+height: 70px;
+width: 70px;
+border-radius: 35px;
 }
-.navbar ul li {
-margin-left: 20px;
-padding-top: 5px;
-}
-.navbar .container .logo {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-margin-left: -15px;
-}
-.navbar .container .logo .header {
-margin-left: 15px;
-}
-
-.navbar .container .logo h1{
-margin-bottom: 8px;
-padding-top: 5px;
-font-size: 30px;
-}
-#home .container {
-color: black;
-background: white;
-text-align: center;
-}
-#home .container p {
-color: black;
-}
-#skills .container{
-background: black;
-color: white;
-}
-#skills .container .img {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 25px;
-margin-left: -15px;
-flex-direction: row;
-}
-
-#skills .container .img .image {
-/*height: 600px;
-width: 200px;*/
-color: white;
-background: #333;
-border: 2px solid black;
-border-radius: 5px 5px;
+header .logo {
+padding: 20px;
 margin-left: 10px;
 display: flex;
-flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 }
-#skills .container .img .image p{
+.intro {
+font-size: large;
 padding: 10px;
-}
-#skills p {
-line-height: 1.4rem;
-/*margin-top: 20px;
-margin-right: 20px;*/
-}
-#projects .container {
-background: lightgrey;
-}
-#projects .container .projectNames {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-}
-#projects .container img {
-width: 400px;
-height: 300px;
-border: 2px black solid;
-/*margin: 10px;4îa*/
-/*padding-top: 18px;*/
-border-radius: 20px 20px 0 0;
-}
-#projects .container .projectNames .project{
-background: #333;
-border: 2px solid black;
-border-radius: 20px 20px 0 0;
-/*margin-left: 10px;*/
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 10px;
-}
-#projects .container a {
-color: white;
-}
-#projects .container a:hover {
-color: yellow;
-}
-#contact .container {
 background: black;
 color: white;
-}
-#contact .container .contactMe {
-margin-left: -11px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-.container .contactMe .icon {
-margin: 10px;
-}
-.container .followMe {
-margin-top: 10px;
-margin-bottom: 10px;
-margin-left: -17px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-.container .followMe .followIcon {
-margin-left: 28px;
-}
-#contact a {
-color: white;
-}
-#contact a:active {
-color: blue;
-}
-button {
-//text-decoration: none;
 text-align: center;
-height: 50px;
-width: 150px;
+}
+.intro p {
+margin-top: 20px;
+line-height: 1.5em;
+letter-spacing: 0.12em;
+}
+.intro .schedual {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.schedual li {
+  margin-left: 5px;
+}
+.intro button {
 margin-top: 10px;
+margin-bottom: 15px;
+outline: none;
+font-weight: bold;
+height: 50px;
+width: 200px;
+border: 2px white solid;
+border-radius: 5px;
+}
+.main {
+padding: 20px;
+}
+.main img {
+width: 200px;
+width: 200px;
+}
+.main .already-done {
+display: grid;
+padding: 10px;
+grid-template-columns: repeat(2, 1fr);
+justify-content: spacebetween;
+align-items: center;
 border: 2px black solid;
 border-radius: 5px;
-background: none;
+margin-top: 20px;
+}
+.main .already-done .serviceImages {
+padding: 20px;
+border: 2px black solid;
+margin-left: 5px;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.already-done p {
+padding-top: 10px;
+}
+.already-done a {
+padding-left: 10px;
+text-decoration: none;
 color: black;
 font-weight: bold;
 }
-sub {
-color: black;
+.service-header {
+  margin: 20px;
 }
-@media (max-width: 428px) {
-.navbar .container {
-display: block;
-background: black;
+.service-images {
+  height: 450px;
+  display: flex;
+  overflow-x: scroll;
+  padding: 40px 10px 10px 20px;
+  margin: 20px;
+  /*border: 2px black solid;*/
 }
-   .navbar .container ul {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   justify-content: space-around;
-   align-items: center;
-   }
-   .navbar .container ul li {
-   margin-top: 10px;
-   margin-left: -10px;
-   /*.grid-container {
-   display: block;
-   }*/
+.service-images img {
+  height: 380px;
+  width: 380px;
 }
-#skills .container .img {
-   width: 270px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 25px;
-   margin-left: -8px;
-   flex-direction: column;
-   }
-#projects .container img {
-width: 200px;
-height: 250px;
+.img {
+  height: 260px;
+  width: 100%;
+  margin-left: 20px;
 }
+.img p {
+  background: lightcoral;
+  color: #f1f1f1;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 15px;
+  text-align: center;
 }
-@media (min-width:540px) {
-    .navbar .container {
-    display: flex;
-    }
-    #projects .container .projectNames {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    }
-    #projects .container img {
-    width: 200px;
-    height: 100px;
-    border: 2px black solid;
-    border-radius: 20px 20px 0 0;
-    }
-    #projects .container .projectNames .project{
-    background: #333;
-    border: 2px solid black;
-    border-radius: 20px 20px 0 0;
-    /*margin-left: 10px;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    }
+.contact {
+  padding: 10px;
+  background: black;
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contact li {
+  color: #ddd;
+  margin-top: 10px;
+  margin-left: 10px;
+  list-style: none;
+}
+.contact a {
+  color: #ddd;
+}
+hr {
+  margin-top: 20px;
+}
+.copy {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media (max-width: 540px) {
+  * {
+    font-size: 20px;
+  }
+    .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  header button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-top: 300px;
+  }
+  .main .already-done {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main .already-done .serviceImages {
+margin-top: 10px;
+}
 }
